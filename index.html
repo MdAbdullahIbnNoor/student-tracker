@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Student Grade Tracker</h1>
+        
+        <!-- Statistics Section -->
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Total Students</h3>
+                <p id="totalStudents">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Average Grade</h3>
+                <p id="avgGrade">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Active Students</h3>
+                <p id="activeStudents">0</p>
+            </div>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filters">
+            <button onclick="showAllStudents()">Show All</button>
+            <button onclick="showActiveStudents()">Active Only</button>
+            <button onclick="showHighGrades()">Grade ≥ 90</button>
+        </div>
+
+        <!-- Students List -->
+        <div id="studentsList" class="students-grid">
+            <!-- Students will be added here by JavaScript -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

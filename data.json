@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "subject": "JavaScript",
+    "grade": 85,
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "subject": "HTML",
+    "grade": 92,
+    "isActive": true
+  },
+  {
+    "id": 3,
+    "name": "Carol Davis",
+    "subject": "CSS",
+    "grade": 78,
+    "isActive": false
+  },
+  {
+    "id": 4,
+    "name": "David Wilson",
+    "subject": "JavaScript",
+    "grade": 95,
+    "isActive": true
+  },
+  {
+    "id": 5,
+    "name": "Emma Brown",
+    "subject": "HTML",
+    "grade": 88,
+    "isActive": true
+  }
+]
