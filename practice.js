@@ -13,8 +13,6 @@ let person = {
     city: "New York"
 }
 
-
-
 console.log("Person name is " +person.name);
 console.log(`Person name is ${person.name}`);
 
