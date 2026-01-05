@@ -11,43 +11,38 @@
         </div>
 
         <script>
-        // let students = [
-        //     { name: "Alice", grade: 85 },
-        //     { name: "Bob", grade: 92 },
-        //     { name: "Carol", grade: 78 }
-        // ]
 
-        async function getStudentData() {   
-            try {
-                let response = await fetch('./data.json');
-                let data = await response.json();
-                console.log("Fetched student data:", data); 
-                return data;
-            } catch (error) {
-                console.error("Error fetching student data:", error);
-                return [];
-            }
+
+        async function getData() {
+        try {
+            const res = await fetch("data.json");
+            const data = await res.json();
+            return data;
+        } catch (err) {
+        console.error(err);
+        }
         }
 
+        // getData();
+
+
         async function displayStudents() {
-            let students = await getStudentData(); // Wait for the data
+            let posts = await getData(); // Wait for the data
             let container = document.getElementById('studentList');
 
             // Now students is an array, so forEach works!
-            students.forEach(student => {
-                let studentInfo = document.createElement('div');
 
-                studentInfo.innerHTML = `
-                    <h3>Student No. ${students.indexOf(student) + 1}</h3>
-                    <ul>
-                        <li>Student Name: ${student.name}</li>
-                        <li>Student Grade: ${student.grade}</li>
-                    </ul>
-                `;
-
-                container.appendChild(studentInfo);
-            });
+            posts.forEach((post, index) => {
+                let postDiv = document.createElement('div');
+                postDiv.innerHTML = `
+                 <h1>Id of the Post: ${post.id}</h1>
+                 <h3>Title: ${post.title}</h3>
+                 <p>${post.body}</p>
+                `
+                // container.appendChild(postDiv);
+            })
         }
+
 
         displayStudents();
     </script>

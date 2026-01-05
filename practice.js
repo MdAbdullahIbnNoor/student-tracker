@@ -1,11 +1,5 @@
 
-// const fetch = require('node-fetch');
 
-// let students = [
-//     { name: "Alice", grade: 85 },
-//     { name: "Bob", grade: 92 },
-//     { name: "Carol", grade: 78 }
-// ];
 
 let person = {
     name: "John Doe",
@@ -13,8 +7,25 @@ let person = {
     city: "New York"
 }
 
-console.log("Person name is " +person.name);
-console.log(`Person name is ${person.name}`);
+console.log(`Person Name: ${person.name}, Age: ${person.age}, City: ${person.city}`);
+
+let students = [
+    { name: "Alice", grade: 85 },
+    { name: "Bob", grade: 92 },
+    { name: "Carol", grade: 78 },
+    { name: "David", grade: 88 }
+];
+
+// console.log(students.name);
+
+students.forEach((jodu, index)=>{
+    console.log(`Student Position ${index + 1}: Person Name: ${jodu.name}, Grade: ${jodu.grade}`);
+});
+
+
+
+
+
 
 // students.forEach( student => { 
 //     console.log("Student name: " + student.name);
