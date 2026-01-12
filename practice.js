@@ -1,19 +1,33 @@
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 57d160f153b26a8ecdfdc413219fe269464edced
 let person = {
     name: "John Doe",
     age: 30,
     city: "New York"
 }
 
+<<<<<<< HEAD
 
 console.log(`Person name: ${person.name}`);
 
 let students = [
     { image: 'www.google.com', name: "Alice", grade: 85 },
+=======
+console.log(`Person Name: ${person.name}, Age: ${person.age}, City: ${person.city}`);
+
+let students = [
+    { name: "Alice", grade: 85 },
+>>>>>>> 57d160f153b26a8ecdfdc413219fe269464edced
     { name: "Bob", grade: 92 },
     { name: "Carol", grade: 78 },
     { name: "David", grade: 88 }
 ];
 
+<<<<<<< HEAD
 console.log(students[1].name);
 
 students.forEach((student, index)=>{
@@ -40,6 +54,15 @@ students.forEach((student, index)=>{
 //     grade: student.grade
 // }));
 // console.log("Student Info with Position:", studentInfo);
+=======
+// console.log(students.name);
+
+students.forEach((jodu, index)=>{
+    console.log(`Student Position ${index + 1}: Person Name: ${jodu.name}, Grade: ${jodu.grade}`);
+});
+
+
+>>>>>>> 57d160f153b26a8ecdfdc413219fe269464edced
 
 
 
